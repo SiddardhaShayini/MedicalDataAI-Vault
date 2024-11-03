@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Medical Data AI Vault</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Add Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-data.html">Add Data</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Your Dashboard</h1>
+        <div id="userInfo"></div>
+        <h2>Your Medical Records</h2>
+        <ul id="dataList"></ul>
+
+        <!-- Canvas for Chart.js graph -->
+        <h2>Medical Data Overview</h2>
+        <canvas id="medicalChart" width="400" height="200"></canvas>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medical Data AI Vault. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/js/dashboard.js"></script> <!-- Ensure to include the JS file -->
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data - Medical Data AI Vault</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Add Medical Data</h1>
+        <form id="addDataForm" enctype="multipart/form-data">
+            <label for="medicalId">Medical ID:</label>
+            <input type="text" name="medicalId" required>
+            
+            <label for="title">Title:</label>
+            <input type="text" name="title" required>
+            
+            <label for="description">Description:</label>
+            <textarea name="description" required></textarea>
+            
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" name="hospitalName">
+            
+            <label for="doctorName">Doctor Name:</label>
+            <input type="text" name="doctorName">
+            
+            <label for="medicines">Prescribed Medicines:</label>
+            <input type="text" name="medicines">
+            
+            <label for="tests">Labs/Tests Details:</label>
+            <input type="text" name="tests">
+            
+            <label for="fileUpload">Upload Files:</label>
+            <input type="file" name="fileUpload">
+            
+            <button type="submit">Submit Data</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medical Data AI Vault. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("addDataForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            const formData = new FormData(this); // Create FormData object
+    
+            fetch('/add-medical-data', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Medical data added successfully!');
+                    window.location.href = "dashboard.html";
+                } else {
+                    console.error('Error:', data.message); // Log the error message
+                    alert('Error adding medical data: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error adding medical data');
+            });
+        });
+    </script>
+</body>
+
+</html>
