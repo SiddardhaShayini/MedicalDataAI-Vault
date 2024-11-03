@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em 0;
+    background-color: #444444; 
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(60deg, #444444, #66fcf1, #444444);
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #66fcf1; /* Change color here */
+    animation: rainbow 2s linear infinite;
+}
+
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+    color: #444444;
+}
+
+h2 {
+    font-size: 1.75em;
+    color: #444444;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+footer {
+    background: linear-gradient(60deg, #66fcf1, #444444, #66fcf1);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 400px;  /* Limit the width of the form */
+    margin: 50px auto; /* Center the form on the page */
+    background: white;  /* White background for the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;      /* Padding inside the form */
+}
+
+.form-header {
+    text-align: center;  /* Centered header text */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.form-header h2 {
+    margin: 0;          /* Remove default margin */
+}
+
+label {
+    display: block;     /* Block display for labels */
+    margin-bottom: 8px; /* Space below labels */
+    font-weight: bold;  /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;        /* Full width for inputs */
+    padding: 10px;      /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Box sizing model */
+}
+
+input[type="submit"] {
+    background-color: #28a745; /* Green background for submit */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    padding: 10px;             /* Padding for submit button */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;       /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none; /* No underline */
+    color: #007bff; /* Blue color for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button Styles */
+button,
+input[type="button"],
+input[type="submit"] {
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    padding: 10px 15px;       /* Padding for button */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;       /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+input:invalid {
+    border-color: #dc3545; /* Red border for invalid input */
+}
+
+input:valid {
+    border-color: #28a745; /* Green border for valid input */
+}
+
+
+/* Select (Dropdown) Styles */
+select {
+    width: 100%;              /* Full width for dropdown */
+    padding: 10px;           /* Padding inside dropdown */
+    margin-bottom: 20px;     /* Space below dropdown */
+    border: 1px solid #ccc;  /* Light border */
+    border-radius: 4px;      /* Rounded corners */
+    box-sizing: border-box;   /* Box sizing model */
+    background-color: white;  /* White background */
+}
+
+/* Option Styles (Optional) */
+option {
+    padding: 10px;           /* Padding inside options */
+    background-color: white; /* White background for options */
+    color: #333;             /* Dark text color */
+}
+
+.data-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.data-card {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.data-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.data-card h3 {
+    margin-top: 0;
+    color: #444444;
+}
+
+.data-card p {
+    margin: 5px 0;
+}
+
