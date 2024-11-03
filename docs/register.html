@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Medical Data AI Vault</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Create an Account</h1>
+        <form id="registrationForm" class="form-container">
+            <label for="userType">User Type:</label>
+            <select id="userType" required>
+                <option value="">Select User Type</option>
+                <option value="individual">Individual</option>
+                <option value="hospital">Hospital</option>
+            </select>
+            <button type="button" id="continueBtn">Continue</button>
+        </form>
+
+        <p>Already registered? <a href="login.html">Login</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medical Data AI Vault. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/registration.js"></script>
+</body>
+
+</html>

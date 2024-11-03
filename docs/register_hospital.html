@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Hospital - Medical Data AI Vault</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Hospital Registration</h1>
+        <form id="registrationForm" class="form-container" method="POST" action="/register">
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" id="hospitalName" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" required>
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" id="togglePassword">Show/Hide Password</button>
+            <button type="submit">Register</button>
+        </form>
+        
+
+        <div id="registrationMessage" style="display:none;">
+            <h3>Your registration was successful!</h3>
+            <h3>Your ID: <span id="generatedId"></span></h3>
+            <p>Remember this ID and password. You will need them to log in.</p>
+        </div>
+
+        <p>Already registered? <a href="login.html">Login</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medical Data AI Vault. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/registration.js"></script>
+</body>
+
+</html>
