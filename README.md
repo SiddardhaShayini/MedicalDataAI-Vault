@@ -21,12 +21,21 @@ MedicalDataAI-Vault is an innovative solution for efficient and scalable managem
 3. **Implementation**: Develop the system using a graph database (e.g., Neo4j) and integrate AI components for data analysis.
 4. **Testing and Optimization**: Conduct performance testing and optimize for large-scale use cases.
 
-## Output Screenshot
+## Output Video
 
-![Project Screenshot](assets/images/video.mp4)
+To view the project in action, see the video demonstration below:
+
+![Project Video](assets/images/video.mp4)
+
+> **Note:** If the video doesn't play directly in some markdown viewers (like GitHub), you can download or open it manually using the file path provided.
 
 ## How to Run
 
-- **Follow below text file**
-  ![Project Instructions](assets/images/Instructions.txt)
-  
+1. **Follow the instructions in the text file below**:
+   
+   ![Project Instructions](assets/images/Instructions.txt)
+
+2. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/MedicalDataAI-Vault.git
+   cd MedicalDataAI-Vault
