@@ -1,0 +1,69 @@
+Steps to Run the "Developing and Implementing a Graph Database System for Efficient and Scalable Healthcare Records Management" Project
+
+Step 1: Check if Node.js is Installed
+
+	Open Command Prompt (CMD) or Terminal on your device.
+
+	Type the following command and press Enter:
+
+		node -v
+
+	If it shows a version number (e.g., v16.20.0), Node.js is already installed. Skip to "Step 4".
+
+	If it shows an error or is not recognized, follow the steps below to install Node.js.
+
+
+Step 2: Install Node.js
+
+	Go to the official Node.js website: 'https://nodejs.org/'.
+
+	Download the LTS version.
+
+	Run the installer and follow the instructions:
+
+	Accept the license agreement.
+
+	Ensure the Add to PATH option is checked.
+
+	Click Install and wait for it to finish.
+
+
+Step 3: Verify Installation
+
+	Open CMD/Terminal and type:
+
+		node -v
+
+	This will display the Node.js version if successfully installed.
+
+	Also, check npm (Node Package Manager) by typing:
+
+		npm -v
+
+	This will display the npm version.
+
+
+Step 4: Run the Project
+
+	Navigate to the project folder:
+
+		cd "Developing and Implementing a Graph Database System for Efficient and Scalable Healthcare Records Management"
+
+	Start the server by typing:
+
+		node server.js
+
+	If successful, you’ll see the message:
+
+	Server is running on http://localhost:3000
+
+	Open the link:
+
+	Press Ctrl + Left Click on the URL in CMD, and it will open in your browser.
+
+	To stop the server:
+
+	In the same CMD window, press 
+		Ctrl + C.
+
+
